@@ -1,0 +1,438 @@
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Open Sans Condensed', sans-serif;
+//VAriavle de colores
+iniciado = #303F9F
+presupuesto = #E040FB
+proceso = #FFC107
+detenido = #FF5252
+finalizado = #8BC34A
+azul = #448AFF
+celeste = #03A9F4
+lima = #CDDC39
+rojo = #F44336
+morado =#512DA8
+verde = #8BC34A
+rosa = #E91E63
+gris = #607D8B
+cyan = #00BCD4
+detalle = #9c27b0
+naranja = #303F9F
+
+
+body 
+  background: #f1f1f1
+  font-size: 16px
+
+
+.bg-header
+  background: #fff
+.hr-corta
+  margin:0
+.logo-texto
+  text-align: right
+  font-size: 18px
+  padding: 10px
+  margin:0
+  line-height: 1.2
+  float: left
+  margin-top:10px
+  & span
+    font-weight: 300
+    // border-bottom:1px dotted #000
+
+.brand-img
+  // height: 65px;
+  margin-top: -15px;
+
+.shadow-z-6
+  margin-top:-20px;   
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(199,199,199,1);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(199,199,199,1);
+  box-shadow: 0px 1px 1px 1px rgba(199,199,199,1);
+li.user-name
+  background: #3F51B5
+  padding:2px 
+
+.badge 
+  padding:5px !important
+  
+.estados 
+  margin:0 auto
+  padding:5px
+  // width:50%
+  // border-left:1px dashed #f1f1f1
+ 
+  & h4 
+    text-align:left  
+  & a
+    color:#808080
+    font-size:0.8em    
+.iniciado 
+  background:iniciado !important
+.presupuesto 
+  background:presupuesto !important
+.proceso 
+  background:proceso !important
+.detenido 
+  background:detenido !important
+.finalizado 
+  background:finalizado !important
+
+.ra
+  background: #fff
+  padding: 10px
+ 
+  & a
+    text-decoration: none
+    color:#808080
+  
+/*Registro de actividades*/  
+.ra-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:cyan
+  border-bottom:1px solid cyan
+  margin-top:15px
+  
+  
+  
+.ra-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  border: 1px solid #f1f1f1
+  border-left: 3px solid cyan
+  padding-left:3px
+  
+  
+  
+  & h5
+    font-size: 0.8em
+    padding: 4px
+    margin: 0
+    padding-bottom:2px
+  & h6
+    font-size: 0.7em
+    padding: 4px
+    margin: 0
+    text-align: right
+ 
+  & span
+    font-size: 0.8em
+    padding: 10px
+    line-height: 1.1
+    background: #fafafa
+    display: block
+  
+  & i 
+    color:cyan  
+ /*planificacion marcada*/
+.pm
+  background: #fff
+  padding: 10px
+  margin-bottom:10px
+  
+
+  & a
+    text-decoration: none
+    color:#808080
+.pm-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:morado
+  border-bottom:1px solid morado
+  
+  
+.pm-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  
+  
+  & .fa
+    color:morado
+    font-size: 4em
+    float:left
+    display: block
+    margin-right:10px
+
+  
+
+  & h5
+    font-size: 0.8em
+    padding: 4px
+    margin: 0
+    padding-bottom:2px
+ 
+
+
+   
+  & h6
+    font-size: 0.7em
+    padding: 4px
+    margin: 0
+    text-align: right
+    background: morado
+    color:white
+    margin-top:20px
+  & p 
+    font-size: 0.9em
+    padding-left:1.5em
+      
+    
+/*sin actividad*/
+.sa
+  background: #fff
+  padding: 10px
+  margin-bottom:10px
+  
+
+  & a
+    text-decoration: none
+    color:#808080
+.sa-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:rojo
+  border-bottom:1px solid rojo
+  
+  
+.sa-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  
+  
+  & .fa
+    color:rojo
+    font-size: 4em
+    float:left
+    display: block
+    margin-right:10px
+
+  
+
+  & h5
+    font-size: 0.8em
+    padding: 4px
+    margin: 0
+    padding-bottom:2px
+ 
+
+
+   
+  & h6
+    font-size: 0.7em
+    padding: 4px
+    margin: 0
+    text-align: right
+    background: rojo
+    color:white
+    margin-top:20px
+  & p 
+    font-size: 0.9em
+    padding-left:1.5em
+      
+ 
+
+/*finalizad*/
+
+.fin
+  background: #fff
+  padding: 10px
+  margin-bottom:10px
+  
+
+  & a
+    text-decoration: none
+    color:#808080
+.fin-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:verde
+  border-bottom:1px solid verde
+  
+  
+.fin-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  
+  
+  & .fa
+    color:verde
+    font-size: 4em
+    float:left
+    display: block
+    margin-right:10px
+
+  
+
+  & h5
+    font-size: 0.8em
+    padding: 4px
+    margin: 0
+    padding-bottom:2px
+ 
+
+
+   
+  & h6
+    font-size: 0.7em
+    padding: 4px
+    margin: 0
+    text-align: right
+    background: verde
+    color:white
+    margin-top:20px
+  & p 
+    font-size: 0.9em
+    padding-left:1.5em
+
+/*ultimas*/
+
+.ultimas
+  background: #fff
+  padding: 10px
+  margin-bottom:10px
+  
+  & table 
+    font-size: 0.8em
+    
+    & tr > td
+      vertical-align: middle
+  & a
+    text-decoration: none
+    color:#808080
+.ultimas-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: white
+  color:detalle
+  border-bottom:1px solid detalle
+  margin-top:15px
+  
+  
+.ultimas-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  
+.btn-mini
+  padding: 4px 6px;
+  font-size: 10px;
+
+.td-estado
+  color: white
+  padding: 1px
+
+.filtros
+  padding: 10px
+  background: #fff
+  
+  & h4
+    padding: 5px
+    margin:0
+    color:gris
+    border-bottom:1px dashed #f1f1f1 
+
+.filtros-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:gris
+  border-bottom:1px solid gris 
+  margin-top:15px
+  
+.plan-estados
+  background: gris
+  padding: 10px
+  
+
+/********Seguimiento**********/
+.seg-config
+  background: #fff
+  padding: 10px
+  
+  & p 
+      font-size: 0.8em
+      line-height: 1.2
+      background: naranja
+      padding: 10px  
+      color:white
+
+.seg-config-h4
+  margin: 0
+  color:naranja
+  border-bottom:1px solid naranja
+  padding:8px
+  background: #fff
+  font-size: 1em
+
+.seg-config-h5
+  margin: 0
+  color:naranja
+  border-bottom:1px solid naranja
+  background: #fff
+  font-size: 0.9em
+  padding-bottom:8px
+
+.seg
+  background: #fff
+  padding: 10px
+  margin-bottom:10px 
+  & table 
+    font-size: 0.8em
+    
+    & tr > td
+      vertical-align: middle
+      
+      & strong
+        color:naranja
+  & a
+    text-decoration: none
+    color:#808080
+      
+.seg-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: white
+  color:detalle
+  border-bottom:1px solid detalle
+
+
+/* Toggle Styles */
+.shadow-z-0 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+  .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+    background-color: #ffc107;
+    border:1px solid #ffc107;
+}
+
+
+
+.checkbox label, .radio label, label {
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+    font-weight: 400;
+}

@@ -1,0 +1,129 @@
+<div class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="javascript:void(0)"><img src="img/ppe-brand.png" alt="" class="img-responsive brand-img"></a>
+    </div>
+    <div class="navbar-collapse collapse navbar-warning-collapse">
+     <!--  <ul class="nav navbar-nav">
+        <li class="active"><a href="javascript:void(0)"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="javascript:void(0)">Planificación</a></li>
+        <li><a href="javascript:void(0)">Seguimiento</a></li>
+        <li><a href="javascript:void(0)">Instituciones</a></li>
+  
+      </ul> -->
+ 
+      <ul class="nav navbar-nav navbar-right">
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control col-md-8" placeholder="Buscar proyecto, persona o institución" style="
+    width: 400px;
+    color: #ccc;
+  
+">
+        </div>
+      </form>
+        <li><a href="javascript:void(0)"><i class="fa fa-envelope" aria-hidden="true"></i>
+</a></li>
+        <li><a href="javascript:void(0)"><i class="fa fa-bell" aria-hidden="true"></i>
+</a></li>
+        <li class="dropdown">
+          <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> 
+            <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+           <li class=" active"><a href="#">Pablo Agüero </a></li>
+             <li class="divider"></li>
+            <li><a href="javascript:void(0)">Datos Personales</a></li>
+            <li><a href="javascript:void(0)">Configuración</a></li>
+            <li class="divider"></li>
+            <li><a href="javascript:void(0)">Cerrar Sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-default shadow-z-6">
+<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+    <div class="navbar-collapse collapse navbar-warning-collapse">
+ <ul class="nav navbar-nav">
+        <li ng-class="{active: $route.current.activeMenu == '/'}"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li ng-class="{active: $route.current.activeMenu == 'planificacion'}" ><a href="/planificacion">Planificaciones</a></li>
+        <li ng-class="{active: $route.current.activeMenu == 'seguimiento'}" ><a href="/seguimiento">Seguimiento</a></li>
+        <li ng-class="{active: $route.current.activeMenu == 'instituciones'}" ><a href="/instituciones">Instituciones</a></li>
+         <li ng-class="{active: $route.current.activeMenu == 'estadisticas'}" ><a href="/estadisticas">Estadisticas</a></li>
+    <li ng-class="{active: $route.current.activeMenu == 'admin'}" class="dropdown">
+              <a href="/admin" class="dropdown-toggle" data-toggle="dropdown">Administración <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+            <li><a href="#">Carga Fase 1</a></li>
+            <li><a href="#">Carga Fase 2</a></li>
+            <li><a href="#">Carga Fase 3</a></li>
+            <li><a href="#">Carga Fase 4</a></li>
+            <li><a href="#">Carga Fase 5</a></li>
+          
+            <li class="divider"></li>
+            <li><a href="#">Administrar Usuarios</a></li>
+         
+              </ul>
+            </li>
+      </ul>
+     
+
+ <!--      <ul class="nav navbar-nav">
+        <li class="active"><a href="javascript:void(0)">Active</a></li>
+        <li><a href="javascript:void(0)">Link</a></li>
+        <li class="dropdown">
+          <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+            <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)">Action</a></li>
+            <li><a href="javascript:void(0)">Another action</a></li>
+            <li><a href="javascript:void(0)">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Dropdown header</li>
+            <li><a href="javascript:void(0)">Separated link</a></li>
+            <li><a href="javascript:void(0)">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+
+ <div class="estados navbar-nav navbar-right">
+ 	<!-- <h4>Estado de los proyectos</h4> -->
+ 	<ul class="list-inline" style="margin-top:10px">
+  			<li><a href="#"><span class="badge iniciado">42</span> Iniciados </a></li>
+  			<li><a href="#"><span class="badge presupuesto">16</span> Presupuestos </a></li>
+  			<li><a href="#"><span class="badge proceso">80</span> En proceso </a></li>
+  			<li><a href="#"><span class="badge detenido">30</span> Detenidos </a></li>
+  			<li><a href="#"><span class="badge finalizado">125</span> Finalizados </a></li>
+</ul>
+
+ </div>
+     <!--  <ul class="nav navbar-nav navbar-right">
+        <li><a href="javascript:void(0)">Link</a></li>
+        <li class="dropdown">
+          <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+            <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)">Action</a></li>
+            <li><a href="javascript:void(0)">Another action</a></li>
+            <li><a href="javascript:void(0)">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="javascript:void(0)">Separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+    </div>
+  </div>
+</div>

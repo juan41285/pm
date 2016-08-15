@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es-ES" ng-app="ppe" >
+  <head>
+  <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+   
+    <title></title>
+    <meta view-head name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Coloca favicon.ico y apple-touch-icon(s) en el directorio raíz -->
+     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    
+    <!-- build:css css/style.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/components-font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+   
+
+   
+
+   
+
+   
+   
+    <link rel="stylesheet" href="/stylesheets/amaterial.css">
+   
+
+   
+
+   
+
+   
+   
+    <link rel="stylesheet" href="/stylesheets/main.css">
+   
+
+   
+
+   
+
+   
+   
+    <!-- endinject -->
+   
+    <!-- endbuild -->    
+       <!--[if lt IE 8]>
+ <p class="browsehappy">
+ Estás usando un navegador <strong>desactualizado</s
+trong>.
+ Por favor <a href="http://browsehappy.com/">actuali
+za tu navegador</a>
+ Para mejorar la experiencia..
+III. Anatomía de una aplicación AngularJS.
+3.1 HTML5Boilerplate
+ </p> 
+ <![endif]-->
+
+ 
+  <body > 
+   <div ng-controller="MenuCtrl" ng-include="template.menu" ng-show="menuToggle"></div>
+  <div ng-view></div>
+ 
+ 
+  
+ 
+    <!-- build:js js/vendor.min.js -->
+    <!-- bower:js -->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/arrive/src/arrive.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <!-- inject:js -->
+    <script src="/scripts/controllers.js"></script>
+    <script src="/scripts/controllers/SidebarCtrl.js"></script>
+    <script src="/scripts/controllers/PlanificacionCtrl.js"></script>
+    <script src="/scripts/controllers/MenuCtrl.js"></script>
+    <script src="/scripts/controllers/LoginCtrl.js"></script>
+    <script src="/scripts/controllers/AdminCtrl.js"></script>
+    <script src="/scripts/templates.js"></script>
+    <script src="/scripts/nouislider.min.js"></script>
+    <script src="/scripts/material.min.js"></script>
+    <script src="/scripts/material-kit.js"></script>
+    <script src="/scripts/directives.js"></script>
+    <script src="/scripts/app.js"></script>
+    <!-- endinject --> 
+    <!-- endbuild -->   
+
+
+    
+  </body>
+</html>
