@@ -3,12 +3,9 @@
 const uuid = require('uuid-base62')
 
 const fixtures = {
-  getImage () {
+  getTarea () {
     return {
-      description: 'an #awesome picture with #tags #platzi',
-      url: `https://platzigram.test/${uuid.v4()}.jpg`,
-      likes: 0,
-      liked: false,
+      description: 'tarea numero ',
       userId: uuid.uuid()
     }
   },

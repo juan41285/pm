@@ -72,7 +72,7 @@ class Db {
       .then((conn) => conn.close())
   }
 
-  saveImage (image, callback) {
+  guardaTarea (tarea, callback) {
     if (!this.connected) {
       return Promise.reject(new Error('not connected')).asCallback(callback)
     }
@@ -82,22 +82,20 @@ class Db {
 
     let tasks = co.wrap(function * () {
       let conn = yield connection
-      image.createdAt = new Date()
-      image.tags = utils.extractTags(image.description)
-
-      let result = yield r.db(db).table('images').insert(image).run(conn)
+      tarea.createdAt = new Date()
+      let result = yield r.db(db).table('tareas').insert(tarea).run(conn)
 
       if (result.errors > 0) {
         return Promise.reject(new Error(result.first_error))
       }
 
-      image.id = result.generated_keys[0]
+      tarea.id = result.generated_keys[0]
 
-      yield r.db(db).table('images').get(image.id).update({
-        publicId: uuid.encode(image.id)
+      yield r.db(db).table('tareas').get(tarea.id).update({
+        publicId: uuid.encode(tarea.id)
       }).run(conn)
 
-      let created = yield r.db(db).table('images').get(image.id).run(conn)
+      let created = yield r.db(db).table('tareas').get(tarea.id).run(conn)
 
       return Promise.resolve(created)
     })
